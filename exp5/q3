@@ -1,0 +1,21 @@
+//Write an inline function to calculate the area of a circle.
+#include <iostream>
+using namespace std;
+
+inline int circle(int r)
+{
+    return 3.14*r*r;
+}
+
+int main()
+{
+    int ra;
+    cout<<"enter radius";
+    cin>>ra;
+    
+    cout<<"the area is"<<circle(ra);
+    
+    
+
+    return 0;
+}
