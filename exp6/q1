@@ -1,0 +1,33 @@
+//Write a program to find the maximum of two numbers using a friend function.
+#include <iostream>
+using namespace std;
+
+class number
+{
+    int a,b;
+    public:
+    void accept()
+    {
+        cout<<"enter 2 numbers";
+        cin>>a>>b;
+    }
+    friend void maximum(number);
+    
+};
+void maximum(number n)
+{
+    if(n.a>n.b)
+    {
+        cout<<"max="<<n.a;
+    }
+    else
+    {
+        cout<<"max="<<n.b;
+    }
+}
+int main()
+{
+    number n;
+    n.accept();
+    maximum(n);
+}
