@@ -1,0 +1,38 @@
+//Write a program to add private members of two different classes.
+#include <iostream>
+using namespace std;
+class B;
+class A
+{
+    private:
+    int a;
+    public:
+    A()
+    {
+        a=20;
+    }
+    friend void sum(A,B);
+};
+class B 
+{
+    private:
+    int b;
+    public:
+    B()
+    {
+        b=30;
+    }
+    friend void sum(A,B);
+};
+void sum(A x,B y)
+{
+    cout<<"Sum="<<x.a+y.b;
+}
+int main()
+{
+    A obj1;
+    B obj2;
+    sum(obj1,obj2);
+    return 0;
+    
+}
