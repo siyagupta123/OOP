@@ -1,0 +1,25 @@
+//Write an inline function to calculate simple interest.
+#include <iostream>
+using namespace std;
+
+inline float si(float p,float r, float t)
+{
+    return (p*r*t)/100;
+}
+
+int main()
+{
+    int pr,ra,ti;
+    cout<<"enter principal";
+    cin>>pr;
+    cout<<"enter rate";
+    cin>>ra;
+    cout<<"enter time";
+    cin>>ti;
+    
+    cout<<"the si is"<<si(pr,ra,ti);
+    
+    
+
+    return 0;
+}
