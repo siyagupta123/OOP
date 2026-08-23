@@ -1,0 +1,20 @@
+//Write an inline function to swap 2 numb
+#include <iostream>
+using namespace std;
+
+inline void swap(int a,int b)
+{
+    int temp=a;
+    a=b;
+    b=temp;
+}
+
+int main()
+{
+    int x=10,y=20;
+    cout<<"before swap x="<<x<<"y=\n"<<y;
+    swap(x,y);
+    cout<<"after swap x="<<x<<"y="<<y;
+    
+    return 0;
+}
