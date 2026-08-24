@@ -1,0 +1,35 @@
+//Write a program to calculate the average using a friend function.
+//Write a program to calculate the average using a friend function.
+#include <iostream>
+using namespace std;
+class Numbers
+{
+private:
+int num1;
+int num2;
+
+public:
+void input()
+{
+    cout<<"enter 2 numbers";
+    cin>>num1>>num2;
+}
+friend int calculateavg(Numbers n);
+};
+
+int calculateavg(Numbers n)
+{
+    return(n.num1+n.num2)/2;
+}
+
+
+
+int main()
+{
+Numbers obj;
+obj.input();
+int average=calculateavg(obj);
+cout<<"the average is"<<average;
+return 0;
+}
+
