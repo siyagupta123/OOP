@@ -1,0 +1,27 @@
+//Write a program to count the number of objects created using a static data member.
+#include&lt;iostream&gt;
+using namespace std;
+class Student
+{
+private:
+static int count;
+public:
+Student()
+{
+count++;
+}
+
+static void display()
+{
+cout&lt;&lt;&quot;Total Objects Created = &quot;&lt;&lt;count;
+}
+};
+int Student::count = 0;
+int main()
+{
+Student s1;
+Student s2;
+Student s3;
+Student::display();
+return 0;
+}
