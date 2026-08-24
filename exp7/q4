@@ -1,0 +1,27 @@
+//3. Create a Bank class to count the total number of accounts.
+#include <iostream>
+using namespace std;
+
+class bank
+{
+    private:
+    static int count;
+    public:
+    bank()
+    {
+        count++;
+    }
+    static void display()
+    {
+        cout<<"total accounts="<<count;
+    }
+};
+int bank::count=0;
+
+int main()
+{
+    bank b1,b2,b3,b4;
+    
+    bank::display();
+    return 0;
+}
