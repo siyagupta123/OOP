@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string> 
+using namespace std;
+
+class employee
+{
+    private:
+    int empID;
+    string empName;
+    double empSalary;
+    
+    public:
+    employee(int id, string name, double salary) 
+    {
+        empID = id;
+        empName = name;
+        empSalary = salary;
+    }
+    
+    
+    friend void displayemployee(employee emp); 
+};
+
+void displayemployee(employee emp) 
+{
+    cout<<"--- Employee Details ---"<<endl;
+
+    cout<<"ID: "<<emp.empID<<endl;
+    cout<<"Name: "<<emp.empName << endl;
+    cout<<"Salary: $"<< emp.empSalary << endl;
+}
+
+int main() 
+{
+    employee emp1(101,"Alice Smith", 75000.0);
+
+   
+    displayemployee(emp1);
+
+    return 0;
+}
