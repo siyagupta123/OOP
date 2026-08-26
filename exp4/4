@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+
+class Account
+{
+int accno;
+char name[30];
+float balance;
+
+public:
+void accept()
+{
+cout<<"Enter account number: ";
+cin>>accno;
+cout<<"Enter name: ";
+cin>>name;
+cout<<"Enter balance: ";
+cin>>balance;
+}
+
+void display()
+{
+cout<<"Account Number="<<accno<<endl;
+cout<<"Name="<<name<<endl;
+cout<<"Balance="<<balance;
+}
+};
+
+int main()
+{
+Account a;
+a.accept();
+a.display();
+return 0;
+}
