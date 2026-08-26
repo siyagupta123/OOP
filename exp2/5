@@ -1,0 +1,17 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+
+int main()
+{
+float n=123.45678;
+
+cout<<fixed<<setprecision(2)<<n<<endl;
+
+cout<<left<<setw(15)<<"Name"<<"Marks"<<endl;
+cout<<left<<setw(15)<<"Siya"<<90<<endl;
+
+cout<<right<<setw(15)<<"C++"<<endl;
+
+return 0;
+}
