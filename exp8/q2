@@ -1,0 +1,42 @@
+//Store details of ten books using an array of objects.
+#include <iostream>
+using namespace std;
+
+class book
+{
+    int bookno;
+    char name[30],author[30];
+    
+    public:
+    void accept()
+    {
+        cout<<"enter book name";
+        cin>>name;
+        cout<<"enter author";
+        cin>>author;
+        cout<<"enter book number";
+        cin>>bookno;
+    }
+    void display()
+    {
+        cout<<"book name"<<name;
+        cout<<"author:"<<author;
+        cout<<"book number"<<bookno;
+    }
+};
+int main()
+{
+    book b[10];
+    for (int i=0;i<10;i++)
+    {
+        b[i].accept();
+    }
+    cout<<"Book details";
+    for(int i=0;i<10;i++)
+    {
+        b[i].display();
+    }
+    return 0;
+    
+    
+}
