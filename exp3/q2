@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+float a=12.56;
+int b;
+
+b=(int)a;
+
+cout<<"Float="<<a<<endl;
+cout<<"Integer="<<b;
+
+return 0;
+}
