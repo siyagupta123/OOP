@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+
+class Product
+{
+char name[30],brand[30];
+float price;
+
+public:
+void accept()
+{
+cout<<"Enter product name: ";
+cin>>name;
+cout<<"Enter brand: ";
+cin>>brand;
+cout<<"Enter price: ";
+cin>>price;
+}
+
+void display()
+{
+cout<<"Product Name="<<name<<endl;
+cout<<"Brand="<<brand<<endl;
+cout<<"Price="<<price;
+}
+};
+
+int main()
+{
+Product p;
+p.accept();
+p.display();
+return 0;
+}
