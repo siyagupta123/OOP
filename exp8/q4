@@ -1,0 +1,43 @@
+//Store student marks using an array of objects.
+#include <iostream>
+using namespace std;
+
+class student
+{
+    float marks;
+    char grade[5],name[20];
+    
+    public:
+    void accept()
+    {
+        cout<<"enter name";
+        cin>>name;
+        cout<<"enter marks";
+        cin>>marks;
+        cout<<"enter grade";
+        cin>>grade;
+        
+    }
+    void display()
+    {
+        cout<<"NAME:"<<name;
+        cout<<"MARKS:"<<marks;
+        cout<<"GRADE"<<grade;
+    }
+};
+int main()
+{
+    student s[3];
+    for (int i=0;i<3;i++)
+    {
+        s[i].accept();
+    }
+    cout<<"Product details";
+    for(int i=0;i<3;i++)
+    {
+        s[i].display();
+    }
+    return 0;
+
+    
+}
