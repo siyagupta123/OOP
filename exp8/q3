@@ -1,0 +1,42 @@
+//Create an array of products and display product information.
+#include <iostream>
+using namespace std;
+
+class products
+{
+    int price;
+    char name[30],brand[30];
+    
+    public:
+    void accept()
+    {
+        cout<<"enter products name";
+        cin>>name;
+        cout<<"enter price";
+        cin>>price;
+        cout<<"enter brand";
+        cin>>brand;
+    }
+    void display()
+    {
+        cout<<"PRODUCT NAME:"<<name;
+        cout<<"PRICE:"<<price;
+        cout<<"BRAND"<<brand;
+    }
+};
+int main()
+{
+    products p[10];
+    for (int i=0;i<10;i++)
+    {
+        p[i].accept();
+    }
+    cout<<"Product details";
+    for(int i=0;i<10;i++)
+    {
+        p[i].display();
+    }
+    return 0;
+
+    
+}
