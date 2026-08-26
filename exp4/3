@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+
+class Book
+{
+char name[30],author[30];
+float price;
+
+public:
+void accept()
+{
+cout<<"Enter book name: ";
+cin>>name;
+cout<<"Enter author name: ";
+cin>>author;
+cout<<"Enter price: ";
+cin>>price;
+}
+
+void display()
+{
+cout<<"Book Name="<<name<<endl;
+cout<<"Author="<<author<<endl;
+cout<<"Price="<<price;
+}
+};
+
+int main()
+{
+Book b;
+b.accept();
+b.display();
+return 0;
+}
