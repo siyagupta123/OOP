@@ -1,10 +1,11 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 int main()
 {
 float p,r,t,si;
-printf("Enter principal, rate and time: ");
-scanf("%f%f%f",&p,&r,&t);
+cout<<"Enter principal, rate and time: ";
+cin>>p>>r>>t;
 si=(p*r*t)/100;
-printf("Simple Interest=%f",si);
+cout<<"Simple Interest="<<si;
 return 0;
 }
