@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+class Student
+{
+int marks;
+public:
+void accept();
+void display();
+};
+
+void Student::accept()
+{
+cout<<"Enter marks: ";
+cin>>marks;
+}
+
+void Student::display()
+{
+cout<<"Marks="<<marks;
+}
+
+int main()
+{
+Student s;
+s.accept();
+s.display();
+return 0;
+}
