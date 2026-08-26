@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+class Student
+{
+public:
+    int marks;
+
+    void accept()
+    {
+        cin>>marks;
+    }
+};
+
+int main()
+{
+    Student s[5];
+    int sum = 0;
+
+    for(int i=0;i<5;i++)
+        s[i].accept();
+
+    for(int i=0;i<5;i++)
+        sum += s[i].marks;
+
+    cout<<"Average="<<(float)sum/5;
+
+    return 0;
+}
