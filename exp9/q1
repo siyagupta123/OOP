@@ -1,0 +1,36 @@
+//1. Write a program using a default constructor.
+#include <iostream>
+#include <string>
+using namespace std;
+class Student 
+{
+private:
+    string name;
+    int age;
+
+public:
+    
+    Student() 
+    {
+        name="Unknown";
+        age=18;
+        cout<<"Default constructor called automatically!"<<endl;
+    }
+
+    
+    void display() 
+    {
+        cout<<"Name:"<<name<<"Age:"<<age<<endl;
+    }
+};
+
+int main()
+
+{
+    
+    Student student1;
+    student1.display();
+
+    return 0;
+}
+
